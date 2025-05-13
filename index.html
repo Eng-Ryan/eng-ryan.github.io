@@ -1,97 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Golam Ryan | Cybersecurity & Network Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Golam Ryan | Cybersecurity Terminal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Golam Ryan</h1>
-      <p>Cybersecurity & Network Engineer</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certs">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="red-dot"></span>
+      <span class="yellow-dot"></span>
+      <span class="green-dot"></span>
+      <span class="title">root@ryan:~$</span>
     </div>
-  </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a hands-on Cybersecurity and Network Engineer with practical experience in enterprise and telecom environments. I specialize in configuring Cisco/Huawei devices, deploying firewalls (pfSense, Palo Alto), and conducting vulnerability assessments using tools like Snort and Nmap. I’ve contributed to 5G deployment and cloud infrastructure (AWS, GCP) implementation.</p>
-    </div>
-  </section>
+    <div class="terminal-body">
+      <p class="typewriter">[+] Initializing profile: <strong>Golam Ryan</strong>...</p>
 
-  <section id="skills" class="section bg-light">
-    <div class="container">
-      <h2>Skills & Tools</h2>
-      <div class="grid">
-        <div class="skill">Linux (Kali, Ubuntu, CentOS)</div>
-        <div class="skill">Cisco/Huawei Routers</div>
-        <div class="skill">AWS, GCP</div>
-        <div class="skill">Snort, Wireshark</div>
-        <div class="skill">pfSense, Palo Alto</div>
-        <div class="skill">BGP, OSPF, VLAN, MPLS</div>
-        <div class="skill">Metasploitable, Nmap</div>
-        <div class="skill">Active Directory, DNS, DHCP</div>
-      </div>
-    </div>
-  </section>
+      <p><span class="prompt">root@ryan:~$</span> whoami</p>
+      <p>🔐 Cybersecurity & Network Engineer | RHCE | CCNA</p>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Wazuh Deployment</h3>
-          <p>Built a security monitoring stack using Wazuh SIEM on Linux VMs with rule tuning and log parsing.</p>
-        </div>
-        <div class="card">
-          <h3>Device Login Automation</h3>
-          <p>Wrote scripts to auto-check login access across routers and firewalls for IT audits.</p>
-        </div>
-        <div class="card">
-          <h3>Proxmox + pfSense Lab</h3>
-          <p>Designed a full virtual lab with Proxmox, pfSense, and Mikrotik for testing firewall rules.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <p><span class="prompt">root@ryan:~$</span> cat about-me.txt</p>
+      <p>I specialize in enterprise-grade firewalls, vulnerability assessments, network architecture (BGP, OSPF, MPLS), and 5G implementation. I've deployed secure systems at Robi Axiata and Huawei, built IDS labs with Snort and Metasploitable, and thrive in Linux and cloud-based environments.</p>
 
-  <section id="certs" class="section bg-light">
-    <div class="container">
-      <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>✅ Cisco Certified Network Associate (CCNA)</li>
-        <li>✅ Red Hat Certified Engineer (RHCE)</li>
-        <li>✅ IEC 62443 Cybersecurity Framework</li>
+      <p><span class="prompt">root@ryan:~$</span> ls ./skills</p>
+      <ul>
+        <li>💻 Linux (Kali, CentOS, Ubuntu)</li>
+        <li>📡 Cisco/Huawei Devices</li>
+        <li>🛡️ pfSense, Snort, Fortinet</li>
+        <li>🌐 VPNs: IPSec, L2TP, MPLS</li>
+        <li>🔍 Nmap, Wireshark, Zenmap</li>
+        <li>☁️ AWS, GCP</li>
       </ul>
-    </div>
-  </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Let’s connect and build something secure together.</p>
-      <div class="socials">
-        <a href="mailto:grsawan@gmail.com">Email</a>
-        <a href="https://linkedin.com/in/eng-ryan" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Eng-Ryan" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+      <p><span class="prompt">root@ryan:~$</span> tree ./projects</p>
+      <ul>
+        <li>📁 wazuh-deploy/
+          <ul><li>SIEM deployment on Debian, hardened & scripted.</li></ul>
+        </li>
+        <li>📁 net-login-audit/
+          <ul><li>Login access checker for Cisco/Mikrotik devices.</li></ul>
+        </li>
+        <li>📁 firewall-lab/
+          <ul><li>Proxmox + pfSense + OPNsense simulation lab.</li></ul>
+        </li>
+      </ul>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Golam Ryan. Built with 💻 and ☕</p>
+      <p><span class="prompt">root@ryan:~$</span> curl -s certifications.ryan | less</p>
+      <ul>
+        <li>✔️ CCNA – Cisco Certified Network Associate</li>
+        <li>✔️ RHCE – Red Hat Certified Engineer</li>
+        <li>✔️ IEC 62443 Compliance (Cybersecurity for ICS)</li>
+      </ul>
+
+      <p><span class="prompt">root@ryan:~$</span> open links</p>
+      <ul class="links">
+        <li><a href="mailto:grsawan@gmail.com">📧 Email</a></li>
+        <li><a href="https://linkedin.com/in/eng-ryan" target="_blank">🔗 LinkedIn</a></li>
+        <li><a href="https://github.com/Eng-Ryan" target="_blank">💻 GitHub</a></li>
+      </ul>
+
+      <p><span class="prompt">root@ryan:~$</span> exit</p>
+      <p>Session terminated.</p>
     </div>
-  </footer>
+  </div>
 </body>
 </html>
