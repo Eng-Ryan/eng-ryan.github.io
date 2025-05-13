@@ -87,3 +87,16 @@ a:hover {
 @keyframes blink {
   50% { border-color: transparent; }
 }
+.btn-download {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #00ff6a;
+  color: #121212;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.btn-download:hover {
+  background-color: #00c851;
+}
